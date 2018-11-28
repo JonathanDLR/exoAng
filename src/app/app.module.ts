@@ -6,16 +6,23 @@ import { AppComponent } from './app.component';
 import { PostListComponentComponent } from './post-list-component/post-list-component.component';
 import { PostListItemComponentComponent } from './post-list-item-component/post-list-item-component.component';
 import { PostService } from './service/post.service';
+import { HeaderComponent } from './header/header.component';
+import { NewPostComponentComponent } from './new-post-component/new-post-component.component';
+import { ReactiveFormsModule , FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     PostListComponentComponent,
-    PostListItemComponentComponent
+    PostListItemComponentComponent,
+    HeaderComponent,
+    NewPostComponentComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     PostService
